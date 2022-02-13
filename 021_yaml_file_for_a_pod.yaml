@@ -1,0 +1,24 @@
+#
+#  TASK: write an yaml file for a pod that will run container form nginx image and it will expose port 80
+#
+# Answer is taken from : https://github.com/kubernetes/examples/blob/master/staging/podsecuritypolicy/rbac/pod.yaml
+#  But, it is very generic
+#
+
+# ANSWER:
+
+
+
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    name: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    ports:
+    - containerPort: 80
