@@ -5,6 +5,7 @@
 # ANSWER
 
 kubeval!
+and terrascan, too! (there is git repo for that, as well)
 
 
 https://github.com/instrumenta/kubeval
