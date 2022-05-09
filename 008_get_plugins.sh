@@ -1,5 +1,6 @@
 
-# TASK list all the kubectl plugins you have installed
+# TASK:
+# In bash,  list all the kubectl plugins you have installed
 
 # ANSWER
 
