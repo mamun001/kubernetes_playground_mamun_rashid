@@ -1,5 +1,13 @@
 #!/bin/bash
 
+
+#  TASK:      Using shell , get details about a running GKE cluster
+
+
+#  ANSWER:
+#    HERE is a simple bash script/command 
+
+
 echo
 echo ENTER CLUSTER_NAME: underscore_not_allowed: 
 read CLUSTER

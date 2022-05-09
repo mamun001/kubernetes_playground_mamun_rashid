@@ -1,9 +1,12 @@
 #!/bin/bash
 
-
-# Creates a GKE Kubernetes cluster
+#  TASK:
+# Creates a GKE Kubernetes cluster in your GCP project from bash
 
 # Pre-requisite: you have to be logged to GCP on your shell and you have to have a default project set.
+
+
+#  Bash script to create a GKE cluster in GCP
 
 echo _________________________________________________________________________
 echo creating gke cluster on current project:

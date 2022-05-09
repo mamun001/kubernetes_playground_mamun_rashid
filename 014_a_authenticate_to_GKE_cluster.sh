@@ -1,4 +1,13 @@
 #/bin/bash
+
+
+#  TASK: LOGIN TO CLUSTER and CREATE CONTEXT
+
+
+# ANSWER:
+#   A simple bash script to do that
+
+
 echo
 echo ENTER CLUSTER_NAME: underscore_not_allowed: 
 read CLUSTER
