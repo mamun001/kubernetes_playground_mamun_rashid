@@ -1,7 +1,0 @@
-
-
-# TASK: Find a tool to manage your contexts;
-
-# ANSWER
-
-#  kubectx
