@@ -1,8 +1,8 @@
 
 #  TASK List all namespaces
 
-# ANSWER
+## ANSWER
 
-kubectl get ns
+### kubectl get ns
 
 
