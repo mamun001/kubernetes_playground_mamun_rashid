@@ -3,9 +3,8 @@
 # TASK: get all services, endpoints and IPs associated with each
 
 
-# ANSWER
+## ANSWER
 
-echo _______________________________________________________________________
-echo
-kubectl get endpoints -A
-echo
+### kubectl get endpoints -A
+
+
