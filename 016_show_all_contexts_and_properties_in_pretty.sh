@@ -2,6 +2,6 @@
 # TASK: get list of all available contexts in pretty format
 #
 
-# ANSWER:
+## ANSWER:
 
-kubectl config view -o jsonpath='{}' | jq .
+### kubectl config view -o jsonpath='{}' | jq .

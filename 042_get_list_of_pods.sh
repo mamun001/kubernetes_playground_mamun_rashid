@@ -1,7 +1,7 @@
 
 # TASK: Find out many pods are running in all namespaces
 
-# ANSWER
+## ANSWER
 
-kubectl get pods -A
+### kubectl get pods -A
 

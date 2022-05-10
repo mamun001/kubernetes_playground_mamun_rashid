@@ -1,6 +1,6 @@
 
 # TASK: find out how many pods are running in default namespace
 
-# Answer
+## Answer
 
-kubectl get pods
+### kubectl get pods
