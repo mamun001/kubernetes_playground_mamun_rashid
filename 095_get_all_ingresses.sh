@@ -1,5 +1,7 @@
-# 
 # TASK : list all ingresses
-#
-# ANSWER
-kubectl get ingress -A
+
+## ANSWER
+
+### kubectl get ingress -A
+
+

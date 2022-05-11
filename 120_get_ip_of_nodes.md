@@ -1,7 +1,7 @@
 
 # TASK: find the private IPs of the nodes
 
-# ANSWER
+## ANSWER
 
-kubectl get nodes -o wide
+### kubectl get nodes -o wide
 
