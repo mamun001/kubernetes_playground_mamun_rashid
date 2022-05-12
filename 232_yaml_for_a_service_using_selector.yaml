@@ -1,0 +1,14 @@
+#
+# TASK: Write a YAML for a service that chooses pods based on selector
+#
+apiVersion: v1
+kind: Service
+metadata:
+  name: foo-service-app-nginx
+spec:
+  selector:
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
