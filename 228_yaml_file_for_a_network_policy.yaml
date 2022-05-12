@@ -1,0 +1,11 @@
+#
+# TASK: Make a yaml file for a network policy
+#
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: deny-all-ingress
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
