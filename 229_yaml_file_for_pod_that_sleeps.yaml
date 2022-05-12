@@ -1,0 +1,15 @@
+#
+# TASK:
+#   Make a yaml file for a pod from busybox image that sleeps for long time
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox-sleep
+spec:
+  containers:
+  - name: busybox
+    image: busybox
+    args:
+    - sleep
+    - "1000000"

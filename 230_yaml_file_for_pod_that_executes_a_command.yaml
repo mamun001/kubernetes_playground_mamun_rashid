@@ -1,0 +1,18 @@
+#
+# TASK:
+#   Write a YAML file for a pod that executes a command and slees after
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  name: foopod
+  labels:
+    environment: production
+    app: foo
+spec:
+  containers:
+    - name: foo
+      image: busybox
+      command: ['sh', '-c', 'echo "Hello, World!" && sleep 3600']
+  restartPolicy: OnFailure
+

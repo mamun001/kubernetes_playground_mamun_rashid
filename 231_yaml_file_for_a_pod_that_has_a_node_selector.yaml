@@ -1,0 +1,14 @@
+#
+#   TASK: Write an yaml file for a pod that has a node selector
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  name: foo
+spec:
+  containers:
+    - name: foo
+      image: nginx
+  nodeSelector:
+    foo: bar
+
