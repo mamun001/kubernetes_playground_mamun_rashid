@@ -6,8 +6,8 @@
 
 
 
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: foo45
-automountServiceAccountToken: false
+###apiVersion: v1
+###kind: ServiceAccount
+###metadata:
+###  name: foo45
+###automountServiceAccountToken: false
