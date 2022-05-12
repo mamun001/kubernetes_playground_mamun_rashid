@@ -1,0 +1,12 @@
+#
+# TASK: Make a yaml file for a config map
+#
+#
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: 64cm
+data:
+  # property-like keys; each key maps to a simple value
+  foo: "bar"
+  foo2: "bar2"
