@@ -1,0 +1,29 @@
+
+#
+# TASK: YAML file for a pod with env variables
+#
+
+
+##
+## ANSWER
+##
+
+
+### This is directly from kubernetes.io web site
+###
+### apiVersion: v1
+### kind: Pod
+### metadata:
+###   name: envar-demo
+###   labels:
+###     purpose: demonstrate-envars
+### spec:
+###   containers:
+###   - name: envar-demo-container
+###     image: gcr.io/google-samples/node-hello:1.0
+###     env:
+###     - name: DEMO_GREETING
+###       value: "Hello from the environment"
+###     - name: DEMO_FAREWELL
+###       value: "Such a sweet sorrow"
+
