@@ -9,7 +9,10 @@
 ###
 ### 1. k get deploy foo-deploy -o yaml > foo-deploy.yaml
 ### 2. edit the YAML file and remove the status section
-### 3. Under the "spec" section , add the something like the following (modify to change your requirements) . This is taken diectly from kubernets.io website
+### 3. Under the "spec" section UNDER template section (NOT the top level spec section) , add the something like the following (modify to change your requirements) . This is taken diectly from kubernets.io website
+###
+### 4. IMPORTNAT NOTE: this goes under "spec" under "template" !
+###
 ###       Do not any tabs and add exactly the right amount of indentation spaces
 ### spec:
 ###   affinity:
