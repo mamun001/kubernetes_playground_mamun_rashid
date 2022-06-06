@@ -116,4 +116,62 @@
 ##     starting from a yaml file from another existing network policy becomes complicated
 ##
 
+## ____________________________________________________________________________________________________________
+##
+## 12. for pod, YAML file has: command: blah blah
+##     but the Dockerfile used has CMD something else
+##     Which takes precedence??
+##
+##     YAML overrides the Dockerfile CMD 
+##     
+##     In fact, yaml better have WHOLE COMMAND
+##     (because yaml does not read in "entrypoint" stuff from the Dockerfile
+##
 
+## ____________________________________________________________________________________________________________
+##
+## 13. The following can go under both pod spec and container spec (depends on the question). Both are valid format. Confirmed. 
+## securityContext:
+##   runAsUser: 1000
+##
+##
+
+## ____________________________________________________________________________________________________________
+##
+## 14. kubetcl man page is REALLY bad about this one (no example). To make matter worse, kubernetesio documenttaion only example and it is very picky to begin with
+##     How to update image of a running deployment without deleting it.
+##
+##   k set image deployment/foo-deployment foo-container-name=foo-image:v2
+##
+##
+## ____________________________________________________________________________________________________________
+##
+##
+## 15.  This topic is hard to pin down in kubernetes.io documenation. How are PVCs and PVs bind to each other (criteria) ?
+##
+##
+##  storageClassName in PV and PVC should be same. That's how the matching happens (automatically)
+##
+##  Add the persistent-volume name as volumeName in PVC yaml  to bound PVC to a specific PV.
+##
+##
+##  If you want to do this from PV yaml, you have use claimref
+##
+## ____________________________________________________________________________________________________________
+##
+##  16. These 4 steps from PV to container volumeMounts more or less has to be memorized or at least throughly understood
+##      Otherwise, it will take too long during the exam
+##
+### 1. Create PV 
+###       pay attention to name and storageClass
+### 2. Create PVC (bind to PV by storageClass or volumeName or claimref)
+###         storageclass on both OR volumename from PVC yaml or claimref on PV yaml
+### 3. Create a volume on Pod and give that a name
+###      (in pod yaml, use volumes under spec and persistentVolumeClaim under volumes)
+### 4. Create ... on container YAML
+###      (volumeMounts section under "containers")
+### 
+
+
+## ____________________________________________________________________________________________________________
+##
