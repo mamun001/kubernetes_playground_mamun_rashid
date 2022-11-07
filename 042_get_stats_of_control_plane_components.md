@@ -4,5 +4,7 @@
 ## ANSWER
 
 ### kubectl get cs
+###    OR
+### kubectl get --raw='/readyz?verbose'
 
 
