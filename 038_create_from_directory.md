@@ -8,5 +8,5 @@
 ##
 
 ###
-### kubectl -f foodir
+### kubectl apply -f foodir
 ###
