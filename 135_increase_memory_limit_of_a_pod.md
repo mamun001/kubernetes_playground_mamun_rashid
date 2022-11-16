@@ -1,6 +1,6 @@
 
 #
-# TASK : Increase memory limit of a running pod. Delete the pod if you want to do it
+# TASK : Increase memory limit of a running pod. Delete the pod in the process.
 #
 #
 
